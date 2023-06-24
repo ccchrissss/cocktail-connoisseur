@@ -40,7 +40,7 @@
 	header-img start 
 	============================== -->
 	<section id="hero-area">
-		<img class="img-responsive" src="images/header.jpg" alt="">
+		<img class="img-responsive" src="images/liquor-shelves-shorter.jpg" alt="">
 	</section>
 	<!--
     Header start 
@@ -62,7 +62,8 @@
 										<span class="icon-bar"></span>
 									</button>
 									<a class="navbar-brand" href="#">
-										<img src="images/logo.png" alt="Logo">
+										<!-- <img src="images/logo.png" alt="Logo"> -->
+										<h1>Cocktail Connoisseur</h1>
 									</a>
 
 								</div>
@@ -94,7 +95,7 @@
 				<div class="col-md-12">
 					<div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
 						<div class="title">
-							<h3>Featured <span>Works</span></h3>
+							<h3>Featured <span>Cocktails</span></h3>
 						</div>
 						<div id="owl-example" class="owl-carousel">
 							<div>
@@ -136,16 +137,33 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="block">
-						<img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="images/cooker-img.png"
+						<img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="images/hand-raising-glass-oval-crop.png"
 							alt="cooker-img">
-						<h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">Your
-							<span>Restaurant’s</span> </br> Website Has To Look <span>Good</span>
+						<h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">The
+							<span>Cocktail Picker</span> 
 						</h1>
-						<p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Lorem ipsum dolor sit
+						<!-- <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Lorem ipsum dolor sit
 							amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 							magna aliqua. Ut enim </br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi
 							ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </br>voluptate
-							velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+							velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p> -->
+							<h2>Which cocktail would you like to make today?</h2>
+							<input id="cocktail-picker-input" type="text" name="" value="">
+							<button id="cocktail-picker-button" type="button" name="button">Get Cocktail</button>
+					
+							<h2 id="cocktail-name">Cocktail Name</h2>
+					
+							<img id="cocktail-picker-image" src="" alt="">
+					
+							<h3 id="glass-type">Glassware</h3>
+					
+							<h3 id="ingredients">Ingredients</h3>
+					
+							<ul id="ingredients-list" >
+					
+							</ul>
+					
+							<h3 id="instructions">Instructions</h3>
 					</div>
 				</div><!-- .col-md-12 close -->
 			</div><!-- .row close -->
@@ -496,6 +514,9 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- ***** Me api script ***** -->
+	<script src="js/api.js"></script>
 </body>
 
 </html>
