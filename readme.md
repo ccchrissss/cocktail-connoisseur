@@ -1,6 +1,6 @@
 # Restaurant - OnePage HTML5 restaurant Template
 
-Restaurant is a clean and professional free Responsive Restaurant template, perfect for restaurants, Restaurant menu Bakery, any food business and personal chef websites. Built with Bootstrap and maintaining best practices of HTML5 / CSS3. It’s responsive too – will fit great on all screens and mobile devices.
+Restaurant is a clean and professional free Responsive Restaurant template, perfect for restaurants, Restaurant menu Bakery, any food business and personal chef websites. Built with Bootstrap 3.0.0 and maintaining best practices of HTML5 / CSS3. It’s responsive too – will fit great on all screens and mobile devices.
 
 <img src="https://cloud.githubusercontent.com/assets/10640964/8260476/cfaac5a0-16e5-11e5-8fc8-e9d3f46796e1.jpg" alt="Free bootstrap restaurant template by themefisher">
 
