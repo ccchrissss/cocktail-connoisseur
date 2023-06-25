@@ -277,6 +277,17 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   padding: 40px 0px;
 }
 /*--
+    cocktail-picker Start
+--*/
+h2.cocktail-picker {
+  margin: 40px 0px 20px;
+}
+input.cocktail-picker {
+  margin: 0px 0px 40px;
+}
+
+
+/*--
     blog Start
 --*/
 #blog {
