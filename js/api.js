@@ -20,8 +20,8 @@ function getDrink() {
 
 
             document.querySelector('#cocktail-picker-image').src = data.drinks[0].strDrinkThumb
-            document.querySelector('#cocktail-name').insertAdjacentHTML('beforeend', `: ${data.drinks[0].strDrink}`)
-            document.querySelector('#glass-type').insertAdjacentHTML('beforeend', `: ${data.drinks[0].strGlass}`)
+            document.querySelector('#cocktail-name').insertAdjacentHTML('beforeend', `${data.drinks[0].strDrink}`)
+            document.querySelector('#glass-type').insertAdjacentHTML('beforeend', `${data.drinks[0].strGlass}`)
 
             // document.querySelector('#ingredients').insertAdjacentElement('afterend', ingredientsP)
             // ingredientsP.setAttribute('id', 'ingredients-paragraph')
@@ -31,7 +31,9 @@ function getDrink() {
             
             document.querySelector('#instructions').insertAdjacentElement('afterend', instructionsP)
             instructionsP.setAttribute('id', 'instructions-paragraph')
-            document.querySelector('#instructions-paragraph').insertAdjacentHTML('beforebegin', data.drinks[0].strInstructions )
+            // document.querySelector('#instructions-paragraph').insertAdjacentHTML('beforebegin', data.drinks[0].strInstructions )
+            document.querySelector('#instructions-paragraph').innerHTML = data.drinks[0].strInstructions
+
 
             // let i = 1
             // let ingredientNumber = 'strIngredient' + i

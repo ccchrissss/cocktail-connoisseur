@@ -270,20 +270,43 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #about-us .block {
   text-align: center;
 }
-#about-us .block p {
+/* #about-us .block p {
   color: #959595;
   font-size: 16px;
   line-height: 26px;
   padding: 40px 0px;
-}
+} */
 /*--
     cocktail-picker Start
 --*/
 h2.cocktail-picker {
   margin: 40px 0px 20px;
 }
-input.cocktail-picker {
+input.cocktail-picker, ul.cocktail-details {
   margin: 0px 0px 40px;
+}
+#cocktail-name {
+  color: #ff530a;
+  font-size: 36px;
+}
+.cocktail-details {
+  font-size: 24px;
+  margin: 0px 0px 20px;
+}
+h3.cocktail-details {
+  margin-top: 10px;
+}
+.cocktail-details li, .cocktail-details + p {
+  font-size: 20px;
+  color: #9D9D9D;
+}
+#instructions-paragraph {
+  margin: 20px;
+}
+.recipe-box {
+  border: 5px double #C9C9C9;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
