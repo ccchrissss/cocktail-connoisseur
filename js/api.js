@@ -8,10 +8,34 @@ function filterByPosition(array, element, position) {
     return array.filter(innerArray => innerArray[position].includes(element) == true);
 }
 
+// function elementDisplayToggle() {
+//     let instructions = document.getElementById('instructions')
+
+//     if (instructions.style.display === 'none') {
+//       instructions.style.display = "block";
+//     } else {
+//       instructions.style.display = "none";
+//     }
+// }
+
+function elementDisplayToggle() {
+    let recipeBox = document.querySelector('.recipe-box')
+
+    if (recipeBox.style.display === 'none') {
+      recipeBox.style.display = "block";
+    } else {
+      recipeBox.style.display = "none";
+    }
+}
+
 function getDrink() {
+    const cocktailPickerImage = document.querySelector('#cocktail-picker-image')
     let drink = document.querySelector('#cocktail-picker-input').value
-    const instructionsP = document.createElement('p')
-    // const ingredientsP = document.createElement('p')
+    // const instructionsP = document.createElement('p')
+    const cocktailName = document.querySelector('#cocktail-name')
+    const glassType = document.querySelector('#glass-type')
+    // const instructions =  document.querySelector('#instructions')!
+    const instructionsParagraph = document.querySelector('#instructions-paragraph')
 
     fetch(`https://thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
         .then(res => res.json())
@@ -19,39 +43,25 @@ function getDrink() {
             console.log(data)
 
 
-            document.querySelector('#cocktail-picker-image').src = data.drinks[0].strDrinkThumb
-            document.querySelector('#cocktail-name').insertAdjacentHTML('beforeend', `${data.drinks[0].strDrink}`)
-            document.querySelector('#glass-type').insertAdjacentHTML('beforeend', `${data.drinks[0].strGlass}`)
+            cocktailPickerImage.src = data.drinks[0].strDrinkThumb
 
-            // document.querySelector('#ingredients').insertAdjacentElement('afterend', ingredientsP)
-            // ingredientsP.setAttribute('id', 'ingredients-paragraph')
-            // document.querySelector('#ingredients-paragraph').insertAdjacentHTML('afterbegin', `${data.drinks[0].strIngredient1}`)
+            cocktailName.innerHTML = ''
+            cocktailName.insertAdjacentHTML('beforeend', `${data.drinks[0].strDrink}`)
 
-            // ingredientsLooper()
+            glassType.innerHTML = ''
+            glassType.insertAdjacentHTML('beforeend', `${data.drinks[0].strGlass}`)
             
-            document.querySelector('#instructions').insertAdjacentElement('afterend', instructionsP)
-            instructionsP.setAttribute('id', 'instructions-paragraph')
-            // document.querySelector('#instructions-paragraph').insertAdjacentHTML('beforebegin', data.drinks[0].strInstructions )
-            document.querySelector('#instructions-paragraph').innerHTML = data.drinks[0].strInstructions
+            elementDisplayToggle()
 
-
-            // let i = 1
-            // let ingredientNumber = 'strIngredient' + i
-
-            // do {
-            //     console.log('this is the ingredient: ', data.drinks[0].ingredientNumber)
-            //     i++
-            //     ingredientNumber = 'strIngredient' + i
-            // } while (data.drinks[0].ingredientNumber !== null && i < 50)
-            // let ingredientsArr = Object.keys(data.drinks[0]).filter(  => { return str.includes('Ingredient')} )
-            // let ingredientsArr = Object.entries(data.drinks[0]).filter( filterByPosition() )
+            // instructions.insertAdjacentElement('afterend', instructionsP)
+            // instructionsP.setAttribute('id', 'instructions-paragraph')
+            instructionsParagraph.innerHTML = ''
+            instructionsParagraph.innerHTML = data.drinks[0].strInstructions
+            
 
             let ingredientsArr = filterByPosition(Object.entries(data.drinks[0]), 'Ingredient', 0)
             let measureArr = filterByPosition(Object.entries(data.drinks[0]), 'Measure', 0)
             let ingredientsUl = document.querySelector('#ingredients-list')
-
-            // console.log(Object.entries(data.drinks[0]))
-            // console.log('ingredientsArr: ', ingredientsArr)
 
             for (let i = 0; ingredientsArr[i][1] !== null; i++) {
                 let ingredientsLi = document.createElement("li");
