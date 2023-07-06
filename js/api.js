@@ -2,31 +2,61 @@
 
 //The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM
 
-document.querySelector('#cocktail-picker-button').addEventListener('click', doTheThing)
+const cocktailPickerButton = document.querySelector('#cocktail-picker-button')
+const cocktailPickerInput = document.querySelector('#cocktail-picker-input')
+
+cocktailPickerButton.addEventListener('click', getDrink)
+cocktailPickerInput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault()
+
+        document.querySelector('#cocktail-picker-button').click()
+    }
+})
+
+
+
+
+
+// // Get the input field
+// var input = document.getElementById("myInput");
+
+// // Execute a function when the user presses a key on the keyboard
+// input.addEventListener("keypress", function(event) {
+//   // If the user presses the "Enter" key on the keyboard
+//   if (event.key === "Enter") {
+//     // Cancel the default action, if needed
+//     event.preventDefault();
+//     // Trigger the button element with a click
+//     document.getElementById("myBtn").click();
+//   }
+// });
+
+
+
+
 
 function filterByPosition(array, element, position) {
     return array.filter(innerArray => innerArray[position].includes(element) == true);
 }
 
-// function elementDisplayToggle() {
-//     let instructions = document.getElementById('instructions')
 
-//     if (instructions.style.display === 'none') {
-//       instructions.style.display = "block";
-//     } else {
-//       instructions.style.display = "none";
-//     }
-// }
-
-function elementDisplayToggle() {
+// https://stackoverflow.com/questions/54791182/changing-the-display-of-an-element-via-javascript
+function toggleSearchBar() {
     let recipeBox = document.querySelector('.recipe-box')
+    let display = getComputedStyle(recipeBox).display;
 
-    if (recipeBox.style.display === 'none') {
-      recipeBox.style.display = "block";
-    } else {
-      recipeBox.style.display = "none";
+    if (display == "none") {
+        recipeBox.style.display = "block";
     }
 }
+
+function imageScroller() {
+    let element = document.querySelector('#cocktail-picker-image')
+
+    element.scrollIntoView({behavior: "smooth"});
+}
+
 
 function getDrink() {
     const cocktailPickerImage = document.querySelector('#cocktail-picker-image')
@@ -36,6 +66,7 @@ function getDrink() {
     const glassType = document.querySelector('#glass-type')
     // const instructions =  document.querySelector('#instructions')!
     const instructionsParagraph = document.querySelector('#instructions-paragraph')
+
 
     fetch(`https://thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
         .then(res => res.json())
@@ -51,7 +82,7 @@ function getDrink() {
             glassType.innerHTML = ''
             glassType.insertAdjacentHTML('beforeend', `${data.drinks[0].strGlass}`)
             
-            elementDisplayToggle()
+            toggleSearchBar()
 
             // instructions.insertAdjacentElement('afterend', instructionsP)
             // instructionsP.setAttribute('id', 'instructions-paragraph')
@@ -63,6 +94,7 @@ function getDrink() {
             let measureArr = filterByPosition(Object.entries(data.drinks[0]), 'Measure', 0)
             let ingredientsUl = document.querySelector('#ingredients-list')
 
+            ingredientsUl.innerHTML = ''
             for (let i = 0; ingredientsArr[i][1] !== null; i++) {
                 let ingredientsLi = document.createElement("li");
 
@@ -92,46 +124,10 @@ function getDrink() {
             //     document.querySelector(`#hello-please${i}`).innerHTML = ingredientsArr[i]
 
             // }
-
         })
+
+        imageScroller()
 }
-
-function doTheThing() {
-    getDrink()
-    // ingredientsLooper()
-}
-
-
-// function ingredientsLooper() {
-//     let i = 1
-//     let ingredientNumber = 'strIngredient' + i
-//     console.log(ingredientNumber)
-
-//     // do {
-
-//     // } while (strIngredient)
-//     const ingredientsLi = document.createElement('li')
-
-//     // add  adjacent element strIngredient1 
-
-//     document.querySelector('#ingredients-list').insertAdjacentElement('beforeend', ingredientsLi)
-//     document.querySelector('li').innerHTML = data.drinks[0].strIngredient1
-
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

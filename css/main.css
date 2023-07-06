@@ -261,14 +261,17 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   color: #AA9D84;
 }
 /*--
-    about-us Start
+    cocktail-picker Start
 --*/
-#about-us {
+#cocktail-picker {
   padding: 100px 0px;
   background: #F6F6F6;
 }
-#about-us .block {
+#cocktail-picker .block {
   text-align: center;
+}
+.scroll-margin {
+  scroll-margin-top: 50px;
 }
 /* #about-us .block p {
   color: #959595;
@@ -296,7 +299,10 @@ input.cocktail-picker, ul.cocktail-details {
 h3.cocktail-details {
   margin-top: 10px;
 }
-.cocktail-details li, .cocktail-details + p {
+#glass-type {
+  font-style: italic;
+}
+.cocktail-details li, .cocktail-details + p, #glass-type {
   font-size: 20px;
   color: #9D9D9D;
 }
