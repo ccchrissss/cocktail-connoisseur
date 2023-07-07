@@ -270,8 +270,13 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #cocktail-picker .block {
   text-align: center;
 }
-.scroll-margin {
-  scroll-margin-top: 50px;
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+.cocktail-image-and-recipe {
+  padding-top: 100px;
 }
 /* #about-us .block p {
   color: #959595;
@@ -314,6 +319,8 @@ h3.cocktail-details {
   border: 5px double #C9C9C9;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
@@ -323,7 +330,7 @@ h3.cocktail-details {
 #blog {
   padding-top: 75px;
   padding-bottom: 100px;
-  background: url("../images/blog/blog-bg.jpg");
+  background: url("../images/liquor-shelves.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -533,7 +540,7 @@ h3.cocktail-details {
 #subscribe {
   padding: 100px 0px;
   text-align: center;
-  background: url("../images/subscribe-bg.jpg");
+  background: url("../images/liquor-shelves.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

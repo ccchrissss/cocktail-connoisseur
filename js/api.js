@@ -51,8 +51,8 @@ function toggleSearchBar() {
     }
 }
 
-function imageScroller() {
-    let element = document.querySelector('#cocktail-picker-image')
+function buttonScroller() {
+    let element = document.querySelector('.cocktail-image-and-recipe')
 
     element.scrollIntoView({behavior: "smooth"});
 }
@@ -126,7 +126,7 @@ function getDrink() {
             // }
         })
 
-        imageScroller()
+        buttonScroller()
 }
 
 
