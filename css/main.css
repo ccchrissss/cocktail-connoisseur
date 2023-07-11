@@ -261,6 +261,39 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   color: #AA9D84;
 }
 /*--
+    Featured Cocktails
+-- */
+
+.hovercap {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+ 
+/* (B) POSITION CAPTION */
+.hovercap {
+  /* (B1) PLACE AT BOTTOM */
+  position: absolute; bottom: 30%; left: 0;
+ 
+  /* (B2) DIMENSIONS + COLORS */
+  height: 15%;
+  width: 100%;
+  padding-right: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-clip: content-box;
+}
+
+/* (C) ONLY SHOW CAPTION ON HOVER */
+.hovercap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.hoverwrap:hover .hovercap {
+  visibility: visible; opacity: 1;
+}
+/*--
     cocktail-picker Start
 --*/
 #cocktail-picker {
@@ -290,8 +323,8 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 h2.cocktail-picker {
   margin: 40px 0px 20px;
 }
-input.cocktail-picker, ul.cocktail-details {
-  margin: 0px 0px 40px;
+input.cocktail-picker, ul.cocktail-details, #glass-type {
+  margin: 0px 0px 30px;
 }
 #cocktail-name {
   color: #ff530a;
