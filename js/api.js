@@ -16,6 +16,60 @@ cocktailPickerInput.addEventListener('keypress', function(event) {
 
 
 
+// Featured Cocktail Picker Function
+
+const garibaldiNegroni = document.querySelector('#garibaldi-negroni')
+const grimReaper = document.querySelector('#grim-reaper')
+const b52 = document.querySelector('#b-52')
+const ginLemon = document.querySelector('#gin-lemon')
+const greyhound = document.querySelector('#greyhound')
+const mountainBramble = document.querySelector('#mountain-bramble')
+const thePhilosopher = document.querySelector('#the-philosopher')
+const vampiro = document.querySelector('#vampiro')
+
+function featuredCocktailPicker(cocktailName) { 
+    // cocktailPickerInput.value = 'garibaldi negroni'
+    cocktailPickerInput.value = cocktailName
+
+    getDrink()
+}
+
+garibaldiNegroni.addEventListener('click', function() {
+    featuredCocktailPicker('garibaldi negroni')
+})
+
+grimReaper.addEventListener('click', function() {
+    featuredCocktailPicker('grim reaper')
+})
+
+b52.addEventListener('click', function() {
+    featuredCocktailPicker('b-52')
+})
+
+ginLemon.addEventListener('click', function() {
+    featuredCocktailPicker('gin lemon')
+})
+
+greyhound.addEventListener('click', function() {
+    featuredCocktailPicker('greyhound')
+})
+
+mountainBramble.addEventListener('click', function() {
+    featuredCocktailPicker('mountain bramble')
+})
+
+thePhilosopher.addEventListener('click', function() {
+    featuredCocktailPicker('the philosopher')
+})
+
+vampiro.addEventListener('click', function() {
+    featuredCocktailPicker('vampiro')
+})
+
+
+
+
+
 
 
 // // Get the input field
