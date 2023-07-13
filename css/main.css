@@ -270,6 +270,9 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   align-content: center;
   flex-direction: column;
 }
+.hovercap > h3 {
+  cursor: pointer;
+}
  
 /* (B) POSITION CAPTION */
 .hovercap {
