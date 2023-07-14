@@ -225,6 +225,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 --*/
 #slider {
   padding: 50px 0px;
+  background-color: #F6F6F6;
 }
 #slider .block {
   padding: 0px 40px;
@@ -300,8 +301,8 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     cocktail-picker Start
 --*/
 #cocktail-picker {
-  padding: 100px 0px;
-  background: #F6F6F6;
+  padding: 50px 0px;
+  background: white;
 }
 #cocktail-picker .block {
   text-align: center;
