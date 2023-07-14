@@ -89,6 +89,56 @@
 	</nav><!-- header close -->
 	
 	<!--
+    cocktail picker start
+    ============================== -->
+	<section id="cocktail-picker">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="images/hand-raising-glass-oval-crop.png"
+							alt="cooker-img">
+						<h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">The
+							<span>Cocktail Picker</span> 
+						</h1>
+						<!-- <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Lorem ipsum dolor sit
+							amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua. Ut enim </br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </br>voluptate
+							velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p> -->
+						
+						<h2 class="cocktail-picker">Which cocktail would you like to make today?</h2>
+						<input id="cocktail-picker-input" class="cocktail-picker" type="text" name="" value="">
+						<button id="cocktail-picker-button" type="button" name="button">Get Cocktail</button>
+
+						<div class="row equal cocktail-image-and-recipe">
+							<div class="col-md-6">
+								<img id="cocktail-picker-image" class="img-responsive" src="" alt="">
+							</div>
+
+							<div class="col-md-6 equal">
+								<div class="recipe-box">
+									<h3 class="cocktail-details"><span id="cocktail-name"></span></h3>
+									
+									<h3 id="glass-type" class="cocktail-details"></h3>
+									
+									<h3 id="ingredients" class="cocktail-details">Ingredients</h3>
+									
+									<ul id="ingredients-list" class="cocktail-details">
+									</ul>
+								
+									<h3 id="instructions" class="cocktail-details">Instructions</h3>
+									<p id="instructions-paragraph" class="cocktail-details"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- .col-md-12 close -->
+			</div><!-- .row close -->
+		</div><!-- .containe close -->
+	</section><!-- #call-to-action close -->
+
+		<!--
     Slider start
     ============================== -->
 	<section id="slider">
@@ -155,55 +205,74 @@
 			</div><!-- .row close -->
 		</div><!-- .container close -->
 	</section><!-- slider close -->
+
 	<!--
-    cocktail picker start
+    Slider start
     ============================== -->
-	<section id="cocktail-picker">
+	<section id="slider">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="block">
-						<img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="images/hand-raising-glass-oval-crop.png"
-							alt="cooker-img">
-						<h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">The
-							<span>Cocktail Picker</span> 
-						</h1>
-						<!-- <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Lorem ipsum dolor sit
-							amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Ut enim </br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-							ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </br>voluptate
-							velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p> -->
-						
-						<h2 class="cocktail-picker">Which cocktail would you like to make today?</h2>
-						<input id="cocktail-picker-input" class="cocktail-picker" type="text" name="" value="">
-						<button id="cocktail-picker-button" type="button" name="button">Get Cocktail</button>
-
-						<div class="row equal cocktail-image-and-recipe">
-							<div class="col-md-6">
-								<img id="cocktail-picker-image" class="img-responsive" src="" alt="">
-							</div>
-
-							<div class="col-md-6 equal">
-								<div class="recipe-box">
-									<h3 class="cocktail-details"><span id="cocktail-name"></span></h3>
-									
-									<h3 id="glass-type" class="cocktail-details"></h3>
-									
-									<h3 id="ingredients" class="cocktail-details">Ingredients</h3>
-									
-									<ul id="ingredients-list" class="cocktail-details">
-									</ul>
-								
-									<h3 id="instructions" class="cocktail-details">Instructions</h3>
-									<p id="instructions-paragraph" class="cocktail-details"></p>
+					<div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="title">
+							<h3>Featured <span>Cocktails</span></h3>
+						</div>
+						<div id="owl-example" class="owl-carousel">
+							<div class="hoverwrap">
+								<img class="img-responsive" src="images/featured-cocktails/garibaldi-negroni.jpeg" alt="">
+								<div class="hovercap">
+									<h3 id="garibaldi-negroni">Garibaldi Negroni</h3>
 								</div>
 							</div>
+							<div class="hoverwrap">
+								<img class="img-responsive" src="images/featured-cocktails/grim-reaper.jpeg" alt="">
+								<div class="hovercap">
+									<h3 id="grim-reaper">Grim Reaper</h3>
+								</div>
+							</div>
+							<div class="hoverwrap">
+								<img class="img-responsive" src="images/featured-cocktails/b-52.jpeg" alt="">
+								<div class="hovercap">
+									<h3 id="b-52">B-52</h3>
+								</div>
+							</div>
+							<div class="hoverwrap">
+								<img class="img-responsive" src="images/featured-cocktails/gin-lemon.jpeg" alt="">
+								<div class="hovercap">
+									<h3 id="gin-lemon">Gin Lemon</h3>
+								</div>
+							</div>
+							<div class="hoverwrap">
+								<img class="img-responsive" src="images/featured-cocktails/greyhound.jpeg" alt="">
+								<div class="hovercap">
+									<h3 id="greyhound">Greyhound</h3>
+								</div>
+							</div>
+							<div class="hoverwrap">
+								<img class="img-responsive" src="images/featured-cocktails/mountain-bramble.jpeg" alt="">
+								<div class="hovercap">
+									<h3 id="mountain-bramble">Mountain Bramble</h3>
+								</div>
+							</div>
+							<div class="hoverwrap">
+								<img class="img-responsive" src="images/featured-cocktails/the-philosopher.jpeg" alt="">
+								<div class="hovercap">
+									<h3 id="the-philosopher">The Philosopher</h3>
+								</div>
+							</div>
+							<div class="hoverwrap">
+								<img class="img-responsive" src="images/featured-cocktails/vampiro.jpeg" alt="">
+								<div class="hovercap">
+									<h3 id="vampiro">Vampiro</h3>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div><!-- .col-md-12 close -->
 			</div><!-- .row close -->
-		</div><!-- .containe close -->
-	</section><!-- #call-to-action close -->
+		</div><!-- .container close -->
+	</section><!-- slider close -->
 
 	<!--
     blog start
