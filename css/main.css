@@ -70,7 +70,7 @@ a:active {
   text-align: center;
   font-weight: 500;
   color: #2E2E2E;
-  padding: 40px 0px;
+  padding: 50px 0px;
   position: relative;
 }
 .heading span {
@@ -300,8 +300,32 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 /*--
     cocktail-picker Start
 --*/
+.cocktail-picker-box {
+  display: flex;
+  flex-direction: column;
+}
+#cocktail-picker-input {
+  display: inline-block;
+  width: auto;
+}
+#cocktail-picker-button {
+  background: #FF4F02;
+  /* float: right; */
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0px;
+  border: 0px;
+  /* width: 512px; */
+  height: 48px;
+  vertical-align: baseline;
+  /* padding-top: 15px; */
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
 #cocktail-picker {
-  padding: 50px 0px;
+  padding: 35px 0px 50px;
   background: white;
 }
 #cocktail-picker .block {
@@ -325,7 +349,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     cocktail-picker Start
 --*/
 h2.cocktail-picker {
-  margin: 40px 0px 20px;
+  margin: 50px 0px 30px;
 }
 input.cocktail-picker, ul.cocktail-details, #glass-type {
   margin: 0px 0px 30px;
@@ -647,7 +671,8 @@ h3.cocktail-details {
 #contact-us .block form {
   padding-bottom: 20px;
 }
-#contact-us .block form input {
+#contact-us .block form input,
+#cocktail-picker-input {
   height: 48px;
   border-radius: 0px;
   box-shadow: none;
