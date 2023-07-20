@@ -35,3 +35,18 @@ $(document).ready(function(){
     new WOW().init();
 
 });
+
+
+
+
+// ***** Me *****
+
+// function buttonScroller() {
+//     let element = document.querySelector('#cocktail-picker')
+
+//     element.scrollIntoView({behavior: "smooth"});
+// }
+
+// let cocktailPickerNav = document.querySelector('#cocktail-picker-nav')
+
+// cocktailPickerNav.addEventListener('click', buttonScroller)

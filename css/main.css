@@ -6,6 +6,9 @@
 /*--
     Common Css
 --*/
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: myfont;
   font-size: 14px;
@@ -226,6 +229,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #slider {
   padding: 50px 0px;
   background-color: #F6F6F6;
+  scroll-margin-top: 50px;
 }
 #slider .block {
   padding: 0px 40px;
@@ -300,6 +304,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 /*--
     cocktail-picker Start
 --*/
+
 .cocktail-picker-box {
   display: flex;
   flex-direction: column;
@@ -330,6 +335,9 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 #cocktail-picker .block {
   text-align: center;
+}
+#cocktail-picker-heading {
+  scroll-margin-top: 130px;
 }
 .equal {
   display: flex;
