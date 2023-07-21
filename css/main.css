@@ -229,7 +229,6 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #slider {
   padding: 50px 0px;
   background-color: #F6F6F6;
-  scroll-margin-top: 50px;
 }
 #slider .block {
   padding: 0px 40px;
@@ -268,7 +267,9 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 /*--
     Featured Cocktails
 -- */
-
+#featured-cocktails {
+  scroll-margin-top: 100px;
+}
 .hovercap {
   display: flex;
   justify-content: center;
@@ -816,4 +817,7 @@ h3.cocktail-details {
 }
 #footer-bottom p a {
   color: #FF4F02;
+}
+#photo-stream {
+  padding-top: 70px;
 }
