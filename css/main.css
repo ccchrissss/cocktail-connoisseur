@@ -224,6 +224,19 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   background: #FF5333;
 }
 /*--
+    Sticky nav
+--*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+/*--
     slider Start
 --*/
 #slider {
@@ -344,6 +357,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .cocktail-image-and-recipe {
   padding-top: 100px;

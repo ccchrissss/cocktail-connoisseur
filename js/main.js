@@ -13,24 +13,24 @@ $(document).ready(function(){
     slideSpeed : 800,
  });
 
-	$("#navigation").sticky({
-		topSpacing : 75,
-	});
+	// $("#navigation").sticky({
+	// 	topSpacing : 75,
+	// });
 
-	$('#nav').onePageNav({
-		currentClass: 'current',
-		changeHash: false,
-		scrollSpeed: 15000,
-		scrollThreshold: 0.5,
-		filter: '',
-		easing: 'easeInOutExpo'
-	});
+	// $('#nav').onePageNav({
+	// 	currentClass: 'current',
+	// 	changeHash: false,
+	// 	scrollSpeed: 15000,
+	// 	scrollThreshold: 0.5,
+	// 	filter: '',
+	// 	easing: 'easeInOutExpo'
+	// });
 
-     $('#top-nav').onePageNav({
-         currentClass: 'active',
-         changeHash: true,
-         scrollSpeed: 1200
-    });
+    //  $('#top-nav').onePageNav({
+    //      currentClass: 'active',
+    //      changeHash: true,
+    //      scrollSpeed: 1200
+    // });
 //Initiat WOW JS
     new WOW().init();
 
@@ -50,3 +50,25 @@ $(document).ready(function(){
 // let cocktailPickerNav = document.querySelector('#cocktail-picker-nav')
 
 // cocktailPickerNav.addEventListener('click', buttonScroller)
+
+// When the user scrolls the page, execute myFunction
+// window.onscroll = function() {myFunction()};
+
+// Get the navbar
+let navbar = document.querySelector('#hello');
+
+// Get the offset position of the navbar
+console.log('navbar.offsetTop: ... ', navbar.offsetTop)
+let sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+window.addEventListener('scroll', myFunction)

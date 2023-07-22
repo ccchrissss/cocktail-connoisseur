@@ -105,8 +105,15 @@ function toggleSearchBar() {
     }
 }
 
+// old, working buttonScroller
+// function buttonScroller() {
+//     let element = document.querySelector('.cocktail-image-and-recipe')
+
+//     element.scrollIntoView({behavior: "smooth"});
+// }
+// new buttonScroller
 function buttonScroller() {
-    let element = document.querySelector('.cocktail-image-and-recipe')
+    let element = document.querySelector('.recipe-box')
 
     element.scrollIntoView({behavior: "smooth"});
 }
