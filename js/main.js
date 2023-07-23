@@ -54,21 +54,64 @@ $(document).ready(function(){
 // When the user scrolls the page, execute myFunction
 // window.onscroll = function() {myFunction()};
 
+document.addEventListener('DOMContentLoaded', function() {
 // Get the navbar
-let navbar = document.querySelector('#hello');
+    let navbar = document.querySelector('#hello');
 
-// Get the offset position of the navbar
-console.log('navbar.offsetTop: ... ', navbar.offsetTop)
-let sticky = navbar.offsetTop;
+    // Get the offset position of the navbar
+    console.log('navbar.offsetTop: ... ', navbar.offsetTop)
+    let sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+    }
+
+    window.addEventListener('scroll', myFunction)
+})
 
 
-window.addEventListener('scroll', myFunction)
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     // When the event DOMContentLoaded occurs, it is safe to access the DOM
+  
+//     // When the user scrolls the page, execute myFunction 
+//     window.addEventListener('scroll', myFunctionForSticky);
+  
+//     // Get the navbar
+//     var navbar = document.getElementById("myTopnav");
+  
+//     // Get the offset position of the navbar
+//     var sticky = navbar.offsetTop;
+  
+//     // Add the sticky class to the navbar when you reach its scroll position. 
+//     // Remove "sticky" when you leave the scroll position
+  
+//     function myFunctionForSticky() {
+//       if (window.pageYOffset >= sticky) {
+//         console.log("window.pageYOffset >= sticky");
+//       } else {
+//         console.log("Not window.pageYOffset >= sticky");
+//       }
+//       if (window.pageYOffset >= sticky) {
+//         navbar.classList.add("sticky");
+//       } else {
+//         navbar.classList.remove("sticky");
+//       }
+//     }
+  
+//     /*Toggle between adding and removing the "responsive" class to topnav
+//     when the user clicks on the icon*/
+  
+//     function myFunctionForResponsive() {
+//       navbar.classList.toggle('responsive');
+//     }
+// })
