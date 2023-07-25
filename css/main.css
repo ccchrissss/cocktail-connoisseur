@@ -226,10 +226,17 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 /*--
     Sticky nav
 --*/
+#hello {
+  padding: 25px;
+  padding-bottom: 10px;
+  margin-top: -85px;
+}
 .sticky {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 85px;
+  /* this width only works right for my screen at full browser window width */
+  width: 89.06%;
+  z-index: 1;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
