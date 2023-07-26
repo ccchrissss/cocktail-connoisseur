@@ -693,7 +693,7 @@ h3.cocktail-details {
     contact-us Start
 --*/
 #contact-us {
-  padding: 70px 0px;
+  padding: 50px 0px;
 }
 #contact-us .block .title {
   padding: 20px 0;
@@ -754,40 +754,40 @@ h3.cocktail-details {
 }
 #footer .block .blog ul,
 #footer .block .info ul,
-#footer .block .gallary ul {
+#footer .block .gallery ul {
   padding-top: 20px;
 }
 #footer .block .blog ul li,
 #footer .block .info ul li,
-#footer .block .gallary ul li {
+#footer .block .gallery ul li {
   margin-bottom: 25px;
   display: inline-block;
   margin-right: 20px;
 }
 #footer .block .blog ul li h4,
 #footer .block .info ul li h4,
-#footer .block .gallary ul li h4 {
+#footer .block .gallery ul li h4 {
   padding-bottom: 10px;
   display: block;
   color: #FF4F02;
 }
 #footer .block .blog ul li h4 i,
 #footer .block .info ul li h4 i,
-#footer .block .gallary ul li h4 i {
+#footer .block .gallery ul li h4 i {
   color: #555;
   margin-right: 30px;
   font-size: 20px;
 }
 #footer .block .blog ul li h4 a,
 #footer .block .info ul li h4 a,
-#footer .block .gallary ul li h4 a {
+#footer .block .gallery ul li h4 a {
   color: #FF4F02;
   font-size: 20px;
   font-weight: 600;
 }
 #footer .block .blog ul li p,
 #footer .block .info ul li p,
-#footer .block .gallary ul li p {
+#footer .block .gallery ul li p {
   color: #474747;
   font-size: 14px;
 }
@@ -840,5 +840,9 @@ h3.cocktail-details {
   color: #FF4F02;
 }
 #photo-stream {
-  padding-top: 70px;
+  padding-top: 50px;
+}
+.gallery img {
+  width: 64px;
+  height: 64px;
 }

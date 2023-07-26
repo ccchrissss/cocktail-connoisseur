@@ -5,6 +5,17 @@
 const cocktailPickerButton = document.querySelector('#cocktail-picker-button')
 const cocktailPickerInput = document.querySelector('#cocktail-picker-input')
 
+
+cocktailPickerInput.addEventListener("keyup", () => {
+    // disabling the button if a input field value is empty
+    if(cocktailPickerInput.value.trim() === "") {
+        cocktailPickerButton.disabled = true;
+    } else {
+        // enabling the button
+        cocktailPickerButton.disabled = false;
+     }
+})
+
 cocktailPickerButton.addEventListener('click', getDrink)
 cocktailPickerInput.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
@@ -113,7 +124,8 @@ function toggleSearchBar() {
 // }
 // new buttonScroller
 function buttonScroller() {
-    let element = document.querySelector('.recipe-box')
+    // let element = document.querySelector('.recipe-box')
+    let element = document.querySelector('.cocktail-image-and-recipe')
 
     element.scrollIntoView({behavior: "smooth"});
 }
