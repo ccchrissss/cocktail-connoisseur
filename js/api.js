@@ -6,15 +6,16 @@ const cocktailPickerButton = document.querySelector('#cocktail-picker-button')
 const cocktailPickerInput = document.querySelector('#cocktail-picker-input')
 
 
-cocktailPickerInput.addEventListener("keyup", () => {
+cocktailPickerInput.addEventListener('input', () => {
     // disabling the button if a input field value is empty
-    if(cocktailPickerInput.value.trim() === "") {
-        cocktailPickerButton.disabled = true;
+    if(cocktailPickerInput.value.trim() === '') {
+        cocktailPickerButton.disabled = true
     } else {
         // enabling the button
-        cocktailPickerButton.disabled = false;
+        cocktailPickerButton.disabled = false
      }
 })
+
 
 cocktailPickerButton.addEventListener('click', getDrink)
 cocktailPickerInput.addEventListener('keypress', function(event) {
@@ -43,6 +44,8 @@ function featuredCocktailPicker(cocktailName) {
     cocktailPickerInput.value = cocktailName
 
     getDrink()
+    
+    cocktailPickerButton.disabled = false
 }
 
 garibaldiNegroni.addEventListener('click', function() {
