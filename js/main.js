@@ -54,29 +54,46 @@ $(document).ready(function(){
 // When the user scrolls the page, execute myFunction
 // window.onscroll = function() {myFunction()};
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', stickyHeaderFunc)
+window.addEventListener('resize', stickyHeaderFunc)
+// document.addEventListener('DOMContentLoaded', stickyHeaderFunc)
+
+
+
+
+function stickyHeaderFunc () {
 
     window.addEventListener('scroll', stickyClassAppender)
 
 // Get the navbar
     let navbar = document.querySelector('#hello');
+    let backgroundImage = document.querySelector('#home')
 
     // Get the offset position of the navbar
     console.log('navbar.offsetTop: ... ', navbar.offsetTop)
     let sticky = navbar.offsetTop;
 
+    // let navbarHeight = navbar.getBoundingClientRect().height
+    let backgroundImageHeight = backgroundImage.getBoundingClientRect().height
+    // let differenceHeight = backgroundImageHeight - navbarHeight
+    let differenceHeight = backgroundImageHeight - 86
+
+    // console.log('navbarHeight: ', navbarHeight)
+    // console.log('backgroundImageHeight: ', backgroundImageHeight)
+    console.log('differenceHeight: ', differenceHeight)
+
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function stickyClassAppender() {
         // if (window.pageYOffset >= sticky) {
         // if (window.pageYOffset >= 235) {
-        if (window.pageYOffset >= sticky) {
+        if (window.pageYOffset >= differenceHeight) {
 
             navbar.classList.add("sticky")
         } else {
             navbar.classList.remove("sticky");
         }
     }
-})
+}
 
 
 // Make the sticky div match the width of col-md-12 div 
