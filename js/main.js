@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    window.addEventListener('scroll', myFunction)
+    window.addEventListener('scroll', stickyClassAppender)
 
 // Get the navbar
     let navbar = document.querySelector('#hello');
@@ -66,16 +66,36 @@ document.addEventListener('DOMContentLoaded', function() {
     let sticky = navbar.offsetTop;
 
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-    // if (window.pageYOffset >= sticky) {
-    if (window.pageYOffset >= 235) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-    }
+    function stickyClassAppender() {
+        // if (window.pageYOffset >= sticky) {
+        // if (window.pageYOffset >= 235) {
+        if (window.pageYOffset >= sticky) {
 
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
 })
+
+
+// Make the sticky div match the width of col-md-12 div 
+
+
+document.addEventListener('DOMContentLoaded', changeFixedElementWidth);
+window.addEventListener('resize', changeFixedElementWidth);
+window.addEventListener('scroll', changeFixedElementWidth);
+
+function changeFixedElementWidth() {
+    const parentElement = document.querySelector('.parent-element');
+    const fixedElement = document.querySelector('.fixed-element');
+    
+    console.log(parentElement.getBoundingClientRect())
+
+    let parentElementWidth = parentElement.getBoundingClientRect().width;
+    fixedElement.style.width = parentElementWidth - 30 + 'px';
+//   console.log('fixedElement.style.width: ', fixedElement.style.width)
+}
 
 
 
