@@ -112,6 +112,18 @@ a:active {
   background: #C8C1B3;
   margin-left: -70px;
 }
+.break {
+  display: none;
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .navbar-brand h1 {
+    margin-top: -32px;
+  }
+  .break {
+    display: block;
+  }
+}
+
 /*--
     transition custom style
 --*/
