@@ -135,7 +135,7 @@ function buttonScroller() {
 
 
 function getDrink() {
-    const cocktailPickerImage = document.querySelector('#cocktail-picker-image')
+    const cocktailPickerImage = document.querySelector('#cocktail-result-image')
     let drink = document.querySelector('#cocktail-picker-input').value
     // const instructionsP = document.createElement('p')
     const cocktailName = document.querySelector('#cocktail-name')
