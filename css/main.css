@@ -375,6 +375,11 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #cocktail-picker .block {
   text-align: center;
 }
+#cocktail-picker-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-around;
+}
 #cocktail-picker-heading {
   scroll-margin-top: 130px;
 }
@@ -383,11 +388,23 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     margin: 20px;
   }
 }
+#cocktail-picker-block .cocktail-picker-image {
+  display: flex;
+  align-items: center;
+}
+.cocktail-picker-image img {
+  max-width: 100%;
+  height: auto;
+}
 .equal {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
 }
 .cocktail-image-and-recipe {
   padding-top: 100px;

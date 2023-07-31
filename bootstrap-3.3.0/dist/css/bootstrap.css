@@ -1393,11 +1393,12 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
+/* I turned this off so the nacbar would stay wider at sm viewport widths */
+/* @media (min-width: 768px) {
   .container {
     width: 750px;
   }
-}
+} */
 @media (min-width: 992px) {
   .container {
     width: 970px;
