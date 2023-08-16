@@ -56,6 +56,8 @@ $(document).ready(function(){
 
 document.addEventListener('DOMContentLoaded', stickyHeaderFunc)
 window.addEventListener('resize', stickyHeaderFunc)
+// window.addEventListener('scroll', stickyHeaderFunc)
+
 // document.addEventListener('DOMContentLoaded', stickyHeaderFunc)
 
 
@@ -65,7 +67,7 @@ function stickyHeaderFunc () {
 
     window.addEventListener('scroll', stickyClassAppender)
 
-// Get the navbar
+    // Get the navbar
     let navbar = document.querySelector('#hello');
     let backgroundImage = document.querySelector('#home')
 
@@ -76,6 +78,7 @@ function stickyHeaderFunc () {
     // let navbarHeight = navbar.getBoundingClientRect().height
     let backgroundImageHeight = backgroundImage.getBoundingClientRect().height
     // let differenceHeight = backgroundImageHeight - navbarHeight
+    // let differenceHeight = backgroundImageHeight - 86
     let differenceHeight = backgroundImageHeight - 86
 
     // console.log('navbarHeight: ', navbarHeight)
