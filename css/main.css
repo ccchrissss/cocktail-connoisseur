@@ -280,6 +280,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 .parent-element {
   display: flex;
+  height: 0px;
 }
 .fixed-element {
   display: flex;
