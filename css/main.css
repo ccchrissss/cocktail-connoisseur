@@ -892,6 +892,10 @@ h3.cocktail-details {
   background: #FF4F02;
   color: #fff;
 }
+#footer .container .row {
+  display: flex;
+  justify-content: space-evenly;
+}
 /*--
     footer-bottom Start
 --*/

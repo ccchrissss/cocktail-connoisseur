@@ -352,6 +352,11 @@ px      68    160    252    */
     margin-right: 0px;
     display: inline-block;
   }
+  /* @media screen and (max-width: 991px) {
+    #footer .container .row {
+      display: flex;
+    }
+  } */
   /*--
     footer-bottom Start
 --*/
