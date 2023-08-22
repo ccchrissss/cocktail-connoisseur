@@ -331,6 +331,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   font-size: 40px;
   color: #AA9D84;
 }
+
 /*--
     Featured Cocktails
 -- */
@@ -410,6 +411,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   text-align: center;
 }
 #cocktail-picker-block {
+  visibility: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content:  space-around;
@@ -484,7 +486,11 @@ h3.cocktail-details {
   margin-left: 20px;
   margin-right: 20px;
 }
-
+@media screen and (max-width: 991px) {
+  .cocktail-image-and-recipe .col-md-6.equal {
+    padding-top: 50px;
+  }
+}
 
 /*--
     blog Start
@@ -813,6 +819,9 @@ h3.cocktail-details {
 /*--
     footer Start
 --*/
+#footer .block.wow.fadeInLeft {
+  visibility: hidden;
+}
 #footer {
   padding: 70px 0px;
 }

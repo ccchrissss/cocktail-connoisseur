@@ -142,6 +142,7 @@ function getDrink() {
     const glassType = document.querySelector('#glass-type')
     // const instructions =  document.querySelector('#instructions')!
     const instructionsParagraph = document.querySelector('#instructions-paragraph')
+    const cocktailImageAndRecipe = document.querySelector('.cocktail-image-and-recipe')
 
 
     fetch(`https://thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
@@ -149,6 +150,7 @@ function getDrink() {
         .then(data => {
             console.log(data)
 
+            cocktailImageAndRecipe.style.visibility = 'visible'
 
             cocktailPickerImage.src = data.drinks[0].strDrinkThumb
 
