@@ -147,6 +147,7 @@ a:active {
   width: 26px;
   height: 3px;
 }
+
 /*--
     transition custom style
 --*/
@@ -262,6 +263,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     Sticky nav
 --*/
 #hello {
+  visibility: hidden;
   padding: 25px;
   padding-bottom: 10px;
   margin-top: -85px;
@@ -439,6 +441,11 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   justify-content: center;
 }
 .flex-break {
+  flex-basis: 100%;
+  height: 0;
+}
+.flex-break-toggle {
+  display: none;
   flex-basis: 100%;
   height: 0;
 }

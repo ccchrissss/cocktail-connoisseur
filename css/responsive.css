@@ -328,7 +328,7 @@ px      68    160    252    */
     contact-us Start
 --*/
   #contact-us {
-    padding: 60px 0 0;
+    padding: 50px 0 0;
   }
   #contact-us .block a {
     padding: 20px 80px;
@@ -366,5 +366,50 @@ px      68    160    252    */
   #footer-bottom .block p {
     text-align: center;
     padding-top: 0px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #footer .contact-info-col {
+    padding-left: 8%;
+  }
+}
+@media screen and (max-width: 549px) {
+  #footer .social-media-link #insta {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 521px) {
+  #footer .row {
+    flex-wrap: wrap;
+  }
+  #footer .block.wow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #footer .block.wow h3,
+  #footer .block.wow ul p {
+    text-align: center;
+  }
+  #footer .block.wow h4 {
+    margin-left: 33%;
+  }
+  #footer .gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #footer .block .gallery ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  #footer .block.wow h4 {
+    margin-left: 0%;
+    text-align: center;
   }
 }
