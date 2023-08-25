@@ -369,10 +369,24 @@ px      68    160    252    */
   }
 }
 
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 907px) {
+  #footer .gallery ul {
+    max-width: 259px;
+  }
+}
+@media screen and (min-width: 522px) and (max-width: 767px) {
+  #footer .contact-info-col {
+    max-width: 41.66666667%;
+  }
+}
+@media screen and (min-width: 522px) and (max-width: 767px) {
   #footer .contact-info-col {
     padding-left: 8%;
+  }
+}
+@media screen and (min-width: 522px) and (max-width: 708px) {
+  #footer .photo-stream-col {
+    padding-left: 70px;
   }
 }
 @media screen and (max-width: 549px) {
@@ -404,6 +418,9 @@ px      68    160    252    */
   #footer .block .gallery ul li {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  #footer .photo-stream-col .flex-break-toggle {
+    display: flex;
   }
 }
 

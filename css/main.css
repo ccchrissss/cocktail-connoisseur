@@ -880,11 +880,13 @@ h3.cocktail-details {
 }
 #footer .block .social-media-link h3 {
   font-size: 20px;
-  padding-bottom: 15px;
   padding-top: 30px;
 }
 #footer .block .social-media-link h3 span {
   color: #FF4F02;
+}
+#footer .block .social-media-link ul {
+  padding-top: 20px;
 }
 #footer .block .social-media-link ul li {
   display: inline-block;
