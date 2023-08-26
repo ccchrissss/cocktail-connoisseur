@@ -339,7 +339,7 @@ px      68    160    252    */
     footer Start
 --*/
   #footer .block {
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
   }
   #footer .block .info ul li {
     width: 100%;
@@ -395,6 +395,9 @@ px      68    160    252    */
   }
 }
 @media screen and (max-width: 521px) {
+  #footer {
+    padding-top: 50px;
+  }
   #footer .row {
     flex-wrap: wrap;
   }
@@ -421,6 +424,9 @@ px      68    160    252    */
   }
   #footer .photo-stream-col .flex-break-toggle {
     display: flex;
+  }
+  #footer .block .social-media-link h3 {
+    padding-top: 50px;
   }
 }
 
