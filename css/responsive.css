@@ -27,11 +27,14 @@ px      68    160    252    344    436    528    620    712    */
     slider Start
 --*/
   #slider .block h3 {
-    text-align: left;
+    /* text-align: left; */
   }
   #slider .block .owl-carousel img {
     padding-right: 0px;
     width: 95%;
+  }
+  #slider .block .owl-carousel .owl-wrapper .hovercap {
+    padding-right: 5%;
   }
   /*--
     blog Start
@@ -369,6 +372,17 @@ px      68    160    252    */
   }
 }
 
+/* slider */
+@media screen and (max-width: 565px) {
+  #slider .block .owl-carousel .hoverwrap .hovercap.longer-text-name {
+    /* min-height: 47px;
+    overflow: hidden; */
+    height: fit-content;
+  }
+}
+
+
+/* footer */
 @media screen and (max-width: 907px) {
   #footer .gallery ul {
     max-width: 259px;
