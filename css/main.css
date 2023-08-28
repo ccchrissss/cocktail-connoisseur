@@ -426,6 +426,9 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     margin: 20px;
   }
 }
+.cocktail-image-col {
+  padding: 30px;
+}
 #cocktail-picker-block .cocktail-picker-image {
   display: flex;
   align-items: center;
@@ -490,8 +493,9 @@ h3.cocktail-details {
   border: 5px double #C9C9C9;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 700px;
 }
 @media screen and (max-width: 991px) {
   .cocktail-image-and-recipe .col-md-6.equal {

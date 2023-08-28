@@ -372,6 +372,19 @@ px      68    160    252    */
   }
 }
 
+/* cocktail image and recipe */
+/* @media screen and (max-width: 991px) {
+  .cocktail-image-and-recipe .cocktail-image-col {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+} */
+/* @media screen and (max-width: 767px) {
+  #cocktail-result-image {
+    max-width: 450px;
+  }
+} */
+
 /* slider */
 @media screen and (max-width: 565px) {
   #slider .block .owl-carousel .hoverwrap .hovercap.longer-text-name {
