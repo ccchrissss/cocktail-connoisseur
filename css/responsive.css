@@ -214,9 +214,9 @@ px      68    160    252    */
   #cocktail-picker {
     padding: 70px 0;
   }
-  #cocktail-picker .block p {
+  /* #cocktail-picker .block p {
     padding: 40px 0px 0px;
-  }
+  } */
   /*--
     custom title Start
 --*/
@@ -373,6 +373,15 @@ px      68    160    252    */
 }
 
 /* cocktail image and recipe */
+@media screen and (max-width: 991px) {
+  .equal {
+    flex-direction: column-reverse;
+  }
+  .cocktail-image-and-recipe, .cocktail-image-and-recipe .cocktail-image-col {
+    padding-top: 50px;
+  }
+}
+
 /* @media screen and (max-width: 991px) {
   .cocktail-image-and-recipe .cocktail-image-col {
     margin-left: 15%;
