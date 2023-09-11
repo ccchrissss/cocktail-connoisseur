@@ -381,6 +381,13 @@ px      68    160    252    */
     padding-top: 50px;
   }
 }
+@media screen and (max-width: 510px) {
+  #cocktail-picker-block .cocktail-picker-image {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+}
 
 /* @media screen and (max-width: 991px) {
   .cocktail-image-and-recipe .cocktail-image-col {
