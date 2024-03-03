@@ -1,32 +1,30 @@
-# Restaurant - OnePage HTML5 restaurant Template
+# Cocktail Connoisseur
+Have you ever looked up a drink recipe only to be inundated with paragraphs upon paragraphs of flowery prose, aggressive popups suggesting you strongly consider joining this recipe website's newsletter just in time for summer cocktail season, and a 5-paragraph essay about the creator's unique qualifications to concoct such carefully-crafted recipes? Introducing Cocktail Connoisseur! A cocktail recipe web app without all the excess. This app lets you easily search for cocktails, or pick from a few hand-selected varieties if you're looking for something new.
 
-Restaurant is a clean and professional free Responsive Restaurant template, perfect for restaurants, Restaurant menu Bakery, any food business and personal chef websites. Built with Bootstrap 3.0.0 and maintaining best practices of HTML5 / CSS3. It’s responsive too – will fit great on all screens and mobile devices.
+**Link to project:** https://cocktailconnoisseur.netlify.app
 
-<img src="https://cloud.githubusercontent.com/assets/10640964/8260476/cfaac5a0-16e5-11e5-8fc8-e9d3f46796e1.jpg" alt="Free bootstrap restaurant template by themefisher">
+![alt tag](http://placecorgi.com/1200/650)
 
-**NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/themefisher) to keep you updated with this template.
+## How It's Made:
 
-## Demo & Download
+**Tech used:** HTML, CSS, JavaScript, Framework of choice
 
-A fully functional demo is available at <a href="http://demo.themefisher.com/restaurant">Demo</a>
-You can visit our website to download this theme <a href="https://themefisher.com/products/restaurant">Download Now</a>
+Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
 
-<!-- reporting issue -->
-## Reporting Issues
+## Optimizations
+*(optional)*
 
-We use GitHub Issues as the official bug tracker for the restaurant Template. Please Search [existing issues](https://github.com/themefisher/restaurant/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/restaurant/issues).
+You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
 
-<!-- support -->
-## Technical Support or Questions (Paid)
+## Lessons Learned:
 
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
+No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *wow I actually did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
-<!-- licence -->
-## License
+## Examples:
+Take a look at these couple examples that I have in my own portfolio:
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+**Palettable:** https://github.com/alecortega/palettable
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/restaurant/blob/main/LICENSE) license.
+**Twitter Battle:** https://github.com/alecortega/twitter-battle
 
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+**Patch Panel:** https://github.com/alecortega/patch-panel
