@@ -5,13 +5,16 @@ Introducing **Cocktail Connoisseur**! A cocktail recipe web app without all the 
 
 **Link to project:** https://cocktailconnoisseur.netlify.app
 
-![alt tag](http://placecorgi.com/1200/650)
+
+<img width="1440" alt="Screenshot 2024-01-25 at 3 12 21 PM" src="https://github.com/ccchrissss/cocktail-connoisseur/blob/main/images/cocktail-connoisseur-demo-pic-1.png">
+
+
 
 ## How It's Made:
 
 **Tech used:** JavaScript, HTML, CSS, TheCocktailDB API
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+**Cocktail Connoisseur** utilizes TheCocktailDB API to give users access to a rich database of drink recipes. 
 
 ## Optimizations
 *(optional)*
