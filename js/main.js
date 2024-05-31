@@ -72,7 +72,7 @@ function stickyHeaderFunc () {
     let backgroundImage = document.querySelector('#home')
 
     // Get the offset position of the navbar
-    console.log('navbar.offsetTop: ... ', navbar.offsetTop)
+    // console.log('navbar.offsetTop: ... ', navbar.offsetTop)
     let sticky = navbar.offsetTop;
 
     // let navbarHeight = navbar.getBoundingClientRect().height
@@ -83,7 +83,7 @@ function stickyHeaderFunc () {
 
     // console.log('navbarHeight: ', navbarHeight)
     // console.log('backgroundImageHeight: ', backgroundImageHeight)
-    console.log('differenceHeight: ', differenceHeight)
+    // console.log('differenceHeight: ', differenceHeight)
 
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function stickyClassAppender() {
