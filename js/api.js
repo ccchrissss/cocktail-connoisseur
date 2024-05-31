@@ -148,7 +148,7 @@ function getDrink() {
     fetch(`https://thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
 
             cocktailImageAndRecipe.style.visibility = 'visible'
 
@@ -172,8 +172,8 @@ function getDrink() {
             let measureArr = filterByPosition(Object.entries(data.drinks[0]), 'Measure', 0)
             let ingredientsUl = document.querySelector('#ingredients-list')
 
-            console.log('ingredientsArr', ingredientsArr)
-            console.log('measureArr', measureArr)
+            // console.log('ingredientsArr', ingredientsArr)
+            // console.log('measureArr', measureArr)
 
             ingredientsUl.innerHTML = ''
             for (let i = 0; ingredientsArr[i][1] !== null; i++) {
