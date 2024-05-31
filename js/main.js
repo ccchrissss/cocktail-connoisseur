@@ -110,7 +110,8 @@ function changeFixedElementWidth() {
     const parentElement = document.querySelector('.parent-element');
     const fixedElement = document.querySelector('.fixed-element');
     
-    console.log(parentElement.getBoundingClientRect())
+    // console log the dimensions and coordinates of the rectangle
+    // console.log(parentElement.getBoundingClientRect())
 
     let parentElementWidth = parentElement.getBoundingClientRect().width;
     fixedElement.style.width = parentElementWidth - 30 + 'px';

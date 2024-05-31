@@ -172,6 +172,9 @@ function getDrink() {
             let measureArr = filterByPosition(Object.entries(data.drinks[0]), 'Measure', 0)
             let ingredientsUl = document.querySelector('#ingredients-list')
 
+            console.log('ingredientsArr', ingredientsArr)
+            console.log('measureArr', measureArr)
+
             ingredientsUl.innerHTML = ''
             for (let i = 0; ingredientsArr[i][1] !== null; i++) {
                 let ingredientsLi = document.createElement("li");
@@ -181,9 +184,23 @@ function getDrink() {
                 : ingredientsArr.innerHTML = measureArr[i][1] + ingredientsArr[i][1]
 
                 // ingredientsLi.innerHTML = measureArr[i][1] + ingredientsArr[i][1]
-                ingredientsLi.innerHTML = `${measureArr[i][1]} ${ingredientsArr[i][1]}`
-                ingredientsUl.appendChild(ingredientsLi);
+                
+                if ( measureArr[i][1] == null ) {
+                    ingredientsLi.innerHTML = `${ingredientsArr[i][1]}`
+                    ingredientsUl.appendChild(ingredientsLi);
+                } else {
+                    ingredientsLi.innerHTML = `${measureArr[i][1]} ${ingredientsArr[i][1]}`
+                    ingredientsUl.appendChild(ingredientsLi);
+                }
+                
             }
+
+            // testing to see how to make null appear as a measure in ingredientsLi.innerHTML when searching for 'gin fizz' or 'margarita'
+            // console.log(measureArr[3][1])
+            // console.log( typeof measureArr[3][1])
+            // console.log(ingredientsArr[3])
+
+            // console.log(measureArr[3][1] == null)
 
             // console.log('ok thsi is ingredientsArr: ', ingredientsArr)
             // const ingredientsLi = document.createElement('li')
