@@ -27,5 +27,5 @@ One important lesson I learned in this project is 'test test test!' Using an API
 
 **Unit Switcher:** Some cocktail measures are shown in US customary units while others are shown in metric units. Adding a toggle to switch between units would increase usability of the app and widen its appeal.
 
-**Cocktail Variations** TheCocktailDB API includes many twists on classic cocktails. Currently, the user can only access these other recipes if they happen to know the name of the specific variation. To enhance the user experience, this optimization would provide a list of alternative recipes that are similar to the cocktail they've searched for in The Cocktail Picker. 
+**Cocktail Variations:** TheCocktailDB API includes many twists on classic cocktails. Currently, the user can only access these other recipes if they happen to know the name of the specific variation. To enhance the user experience, this optimization would provide a list of alternative recipes that are similar to the cocktail they've searched for in The Cocktail Picker. 
 
