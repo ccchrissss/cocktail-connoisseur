@@ -21,10 +21,11 @@ Further down the page, we have a carousel of hand-selected cocktails to inspire 
 
 ## Lessons Learned:
 
-One important lesson I learned in this project is 'test test test!' Using an API opens up the opportunity for many edge case issues that can be difficult to predict until they're staring right at you. One such issue is having 'null' appear as the unit measure inside the ingredients list for a chosen cocktail. 
+One important lesson I learned in this project is 'test test test!' Using an API opens up the opportunity for many edge case issues that can be difficult to predict until they're staring right at you. One such issue is having 'null' appear as the unit measure inside the ingredients list for a chosen cocktail. This issue would only arise when there was an ingredient that did not require a specific measure, e.g. 'ice cubes' or 'salt.' Thoroughly testing the app with a wide variety of cocktails brought this specific issue to light and highlighted the importance of robust testing. 
 
 ## Future Improvements:
 
 **Unit Switcher:** Some cocktail measures are shown in US customary units while others are shown in metric units. Adding a toggle to switch between units would increase usability of the app and widen its appeal.
-**Cocktail Variations** TheCocktailDB API includes many twists on classic cocktails. Currently, the user can only access these other recipes if they happen to know the name of these specific variations. This optimization would provide the user with a list of alternative recipes of the chosen cocktail for them to explore.
+
+**Cocktail Variations** TheCocktailDB API includes many twists on classic cocktails. Currently, the user can only access these other recipes if they happen to know the name of the specific variation. To enhance the user experience, this optimization would provide a list of alternative recipes that are similar to the cocktail they've searched for in The Cocktail Picker. 
 
