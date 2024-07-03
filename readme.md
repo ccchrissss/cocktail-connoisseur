@@ -14,14 +14,14 @@ Introducing **Cocktail Connoisseur**! A cocktail recipe web app without all the 
 
 **Tech used:** JavaScript, HTML, CSS, TheCocktailDB API
 
-I created **Cocktail Connoisseur** as a sleek, single-page website to inspire users to mix up delectable drinks. The landing page prominently displays the app's main feature: The Cocktail Picker. Users are first prompted to enter their cocktail of choice in the input box. This triggers the getDrink() function which fetches a variety of data from TheCocktailDB API. A function called filterByPosition() is used to provide only the desired elements from the arrays of ingredients and their respective measures. The HTML is then dynamically updated with the relevant information from the searched cocktail. The user is finally provided with an image, official name, ingredients list, and instructions to craft their desired libation. 
+I created **Cocktail Connoisseur** as a sleek, single-page website to inspire users to mix up delectable drinks. The landing page prominently displays the app's main feature: The Cocktail Picker. Users are first prompted to enter their cocktail of choice in the input box. This triggers the getDrink() function which fetches a variety of data from TheCocktailDB API. A function called filterByPosition() is used to provide only the desired elements from the arrays of ingredients and their respective measures. The HTML is then dynamically updated with the relevant information from the searched cocktail. The user is finally provided with an image, official name, ingredients list, and instructions to craft their desired drink. 
 
 Further down the page, we have a carousel of hand-selected cocktails to inspire the user to try something new. They can then click the heading that lies in a given image, and they'll be brought back up to the recipe section which will dynamically update to show the new cocktail information.
 
 
 ## Lessons Learned:
 
-One important lesson I learned in this project is 'test test test!' Using an API opens up the opportunity for many edge case issues that can be difficult to predict until they're staring right at you. One such issue is having 'null' appear as the unit measure inside the ingredients list for a chosen cocktail. This issue would only arise when there was an ingredient that did not require a specific measure, e.g. 'ice cubes' or 'salt.' Thoroughly testing the app with a wide variety of cocktails brought this specific issue to light and highlighted the importance of robust testing. 
+One important lesson I learned in this project is 'test test test!' Using an API opens up the opportunity for many edge case issues that can be difficult to predict until they're staring right at you. One such issue I encountered was having 'null' appear as the unit measure inside the ingredients list for a chosen cocktail. This issue would only arise when there was an ingredient that did not require a specific measure, e.g. 'ice cubes' or 'salt.' Thoroughly testing the app with a wide variety of cocktails brought this specific issue to light and highlighted the importance of thorough testing. 
 
 ## Future Improvements:
 
