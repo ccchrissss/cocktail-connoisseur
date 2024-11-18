@@ -550,6 +550,36 @@
 
 	<!-- ***** Me api script ***** -->
 	<script src="js/api.js"></script>
+
+	<script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <!-- reactDOM is from rendering them to the page -->
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+  <!-- compiles jsx in the browser so the browser can evaluate it as javascript -->
+  <script src="https://unpkg.com/@babel/standalone@7.8.8/babel.js"></script>
+
+  <script type="text/babel">
+
+const rootElement = document.getElementById('root')
+
+const Title = props => <h2 className="Title">{props.children}</h2>
+const Subtitle = props => <h3 className="Subtitle">{props.children}</h3>
+const OpeningCrawl = props => <p className="Opening-crawl">{props.children}</p>
+
+
+
+const element =
+	<div className="container">
+
+		<Title>Star Wars Episode I</Title>
+		<Subtitle>The Phantom Menace</Subtitle>
+		<OpeningCrawl>Turmoil has engulfed the Galactic Republic. The taxation of trade routes to outlying star systems is in dispute. Hoping to resolve the matter with a blockade of deadly battleships, the greedy Trade Federation has stopped all shipping to the small planet of Naboo. While the Congress of the Republic endlessly debates this alarming chain of events, the Supreme Chancellor has secretly dispatched two Jedi Knights, the guardians of peace and justice in the galaxy, to settle the conflict...</OpeningCrawl>
+
+
+	</div>
+
+ReactDOM.render(element, rootElement)
+
+	</script>
 </body>
 
 </html>
