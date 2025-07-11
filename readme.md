@@ -1,5 +1,5 @@
 # Cocktail Connoisseur
-Have you ever looked up a drink recipe only to be inundated with paragraphs upon paragraphs of flowery prose, aggressive popups urging you to strongly consider joining their newsletter just in time for summer cocktail season, and a 5-paragraph essay about the creator's unique qualifications to concoct such carefully-crafted recipes? 
+Have you ever looked up a drink recipe only to be inundated with paragraphs upon paragraphs of flowery prose, aggressive popups urging you to strongly consider joining their newsletter _just in time_ for summer cocktail season, and a 5-paragraph essay about the creator's unique qualifications to concoct such carefully-crafted recipes? 
 
 Introducing **Cocktail Connoisseur**! A cocktail recipe web app without all the excess. This app lets you easily search for cocktails, or pick from a few hand-selected varieties if you're looking for something new. No popups, stories, or poetic waxings to be found.
 
